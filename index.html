@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Londis Daily Sale Entry</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <h2>Londis Daily Sale Entry Form</h2>
+
+  <div class="form-container">
+    <form id="saleForm">
+      <label>Date</label>
+      <input type="date" name="Date" required />
+
+      <label>Previous Balance</label>
+      <input type="number" name="Previous Balance" value="0" />
+
+      <label>Cash</label>
+      <input type="number" name="Cash" value="0" />
+
+      <label>Card</label>
+      <input type="number" name="Card" value="0" />
+
+      <label>Sale</label>
+      <input type="number" name="Sale" value="0" />
+
+      <label>PayPoint</label>
+      <input type="number" name="PayPoint" value="0" />
+
+      <label>Additional Amount</label>
+      <input type="number" name="Additional Amount" value="0" />
+
+      <label>Additional Remarks</label>
+      <textarea name="Additional Remarks" rows="2"></textarea>
+
+      <label>Cash Out if Any</label>
+      <input type="number" name="Cash Out if Any" value="0" />
+
+      <label>Cash Out Reason</label>
+      <textarea name="Cash Out Reason" rows="2"></textarea>
+
+      <label>Total Cash</label>
+      <input type="number" name="Total Cash" value="0" />
+
+      <label>Total Balance Available</label>
+      <input type="number" name="Total Balance Available" value="0" />
+
+      <div class="buttons">
+        <button type="submit" class="save">Save</button>
+        <button type="button" class="clear" onclick="document.getElementById('saleForm').reset()">Clear</button>
+      </div>
+    </form>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
